@@ -21,17 +21,18 @@ body {
 }
 
 header {
-    margin-bottom: 2.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 2em;
 }
 
 header h2 {
     margin-bottom: 1rem;
     font-size: 3rem;
     color: #429e9d;
+    text-align: center;
+}
+
+header p {
+    margin: 1rem 0;
 }
 
 header a {

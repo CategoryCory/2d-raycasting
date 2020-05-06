@@ -6,13 +6,6 @@ let yoff = 10000;
 
 function setup() {
     createCanvas(600, 600);
-    // for (let i = 0; i < 4; i++) {
-    //     let x1 = random(width);
-    //     let x2 = random(width);
-    //     let y1 = random(height);
-    //     let y2 = random(height);
-    //     walls[i] = new Boundary(x1, y1, x2, y2);
-    // }
     walls.push(new Boundary(100, 225, 225, 100));
     walls.push(new Boundary(375, 100, 500, 225));
     walls.push(new Boundary(100, 375, 225, 500));
@@ -40,13 +33,4 @@ function draw() {
 
     xoff += 0.004;
     yoff += 0.004;
-
-    // ray.show();
-    // ray.lookAt(mouseX, mouseY);
-
-    // let pt = ray.cast(wall);
-    // if (pt) {
-    //     fill(255);
-    //     ellipse(pt.x, pt.y, 8, 8);
-    // }
 }
