@@ -3,8 +3,6 @@ let ray;
 let particle;
 let xoff = 0;
 let yoff = 10000;
-let xMovement;
-let yMovement;
 let isMobile;
 
 function setup() {
@@ -22,14 +20,6 @@ function setup() {
     walls.push(new Boundary(width, 0, width, height));
     walls.push(new Boundary(width, height, 0, height));
     walls.push(new Boundary(0, height, 0, 0));
-
-    // if (checkIfMobile() === true) {
-    //     xMovement = noise(xoff) * width;
-    //     yMovement = noise(yoff) * height;
-    // } else {
-    //     xMovement = mouseX;
-    //     yMovement = mouseY;
-    // }
 
     isMobile = checkIfMobile();
 
