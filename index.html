@@ -15,10 +15,9 @@
             <h2>2D Raycasting</h2>
             <p>
                 This is a sample app using the JavaScript P5 library to
-                demonstrate 2D raycasting. To move the light source, move your
-                mouse cursor across the canvas below. For best results, view
-                this page on a desktop or laptop.
+                demonstrate 2D raycasting.
             </p>
+            <p id="displayDesktopMessage"></p>
             <p>
                 This was created following
                 <a href="https://youtu.be/TOEi6T2mtHo">the tutorial</a> on The
@@ -26,10 +25,20 @@
             </p>
         </header>
 
+        <script src="./js/checkIfMobile.js"></script>
         <script src="./js/p5.min.js"></script>
         <script src="./js/boundary.js"></script>
         <script src="./js/ray.js"></script>
         <script src="./js/particle.js"></script>
         <script src="./js/sketch.js"></script>
+        <script>
+            if (checkIfMobile() === false) {
+                const displayDesktopMessage = document.getElementById(
+                    "displayDesktopMessage"
+                );
+                displayDesktopMessage.innerText =
+                    "To move the light source, move your mouse cursor across the canvas below.";
+            }
+        </script>
     </body>
 </html>
